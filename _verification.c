@@ -36,7 +36,7 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 			{	
 				if (instructions[1] == NULL || filter_num(instructions[1]) == NULL)
 				{
-					dprintf(STDERR_FILENO, "L %d: usage: push integer\n", n_line);
+					dprintf(STDERR_FILENO, "L%d: usage: push integer\n", n_line);
 					free(instructions);
 					free_stack(*head);
 					fclose(fd);
