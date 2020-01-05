@@ -5,7 +5,7 @@ char *filter_num(char * instruction)
 
 	while (instruction[i])
 	{
-		if (!(instruction[i] >= 48 && instruction[i] <= 57))
+		if (!(instruction[i] >= 48 && instruction[i] <= 57) && instruction[i] != '-')
 			return (NULL);
 		i++;
 	}
