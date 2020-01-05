@@ -50,11 +50,6 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 	instruction_t comands[] = {
 		{"push", add_stack},
 		{"pall", print_all},
-		/**{"pint", pint_fun},
-		{"pop", pop_fun},
-		{"swap", swap_fun},
-		{"add", add_fun},
-		{"nop", nop_fun},*/
 		{NULL, NULL}
 	};
 	ins = tokenize(line);
