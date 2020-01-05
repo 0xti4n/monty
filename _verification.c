@@ -52,6 +52,7 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 		{"pall", print_all},
 		{"pint", pint_fun},
 		{"pop", pop_fun},
+		{"swap", swap_fun},
 		{NULL, NULL}
 	};
 	ins = tokenize(line);
@@ -59,7 +60,7 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 	{
 		if (strcmp(comands[n_op].opcode, ins[0]) == 0)
 		{
-			if (strcmp(comands[n_op].opcode, "pall") != 0 && strcmp(comands[n_op].opcode, "pint") != 0 && strcmp(comands[n_op].opcode, "pop") != 0)
+			if (strcmp(comands[n_op].opcode, "pall") != 0 && strcmp(comands[n_op].opcode, "pint") != 0 && strcmp(comands[n_op].opcode, "pop") != 0 && strcmp(comands[n_op].opcode, "swap"))
 			{
 				if (ins[1] == NULL || filter_num(ins[1]) == NULL)
 				{

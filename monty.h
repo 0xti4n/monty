@@ -39,6 +39,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 int n;
+void swap_fun(stack_t **stack, unsigned int line_number);
 void getlines(stack_t **head, char **av);
 void pop_fun(stack_t **stack, unsigned int line_number);
 char **tokenize(char *line);
