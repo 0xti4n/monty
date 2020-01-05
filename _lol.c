@@ -9,7 +9,7 @@ int n = 0;
 */
 int main(int ac, char **av)
 {
-	stack_ *head = NULL;
+	stack_t *head = NULL;
 	if (ac != 2)
 	{
 		dprintf(STDERR_FILENO, "USAGE: monty file\n");

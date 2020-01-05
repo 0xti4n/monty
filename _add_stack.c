@@ -5,11 +5,11 @@
  * @line_number: integer to save in node.
  * Return: nothing.
  */
-void add_stack(stack_ **stack, unsigned int line_number)
+void add_stack(stack_t **stack, unsigned int line_number)
 {
-	stack_ *new;
+	stack_t *new;
 	line_number--;
-	new = malloc(sizeof(stack_));
+	new = malloc(sizeof(stack_t));
 	if (new == NULL || stack == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: malloc failed\n");

@@ -5,9 +5,9 @@
  * @line_number: number of line.
  * Return: nothing.
  */
-void print_all(stack_ **stack, unsigned int line_number)
+void print_all(stack_t **stack, unsigned int line_number)
 {
-	stack_ *tmp = *stack;
+	stack_t *tmp = *stack;
 	line_number--;
 	while (tmp)
 	{

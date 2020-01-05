@@ -23,7 +23,7 @@ typedef struct stack_s
 	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
-} stack_;
+} stack_t;
 
 /**
 * struct instruction_s - opcode and its function
@@ -36,13 +36,13 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_ **stack, unsigned int line_number);
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 extern int n;
-void getlines(stack_ **head, char **av);
+void getlines(stack_t **head, char **av);
 char **tokenize(char *line);
-void verification(stack_ **head, char *line, int n_line, FILE *fd);
-void add_stack(stack_ **head, unsigned int line_number);
-void print_all(stack_ **stack, unsigned int line_number);
-void free_stack(stack_ *head);
+void verification(stack_t **head, char *line, int n_line, FILE *fd);
+void add_stack(stack_t **head, unsigned int line_number);
+void print_all(stack_t **stack, unsigned int line_number);
+void free_stack(stack_t *head);
 #endif

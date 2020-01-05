@@ -5,7 +5,7 @@
 * @av: arguments.
 * Return: nothing.
 */
-void getlines(stack_ **head, char **av)
+void getlines(stack_t **head, char **av)
 {
 	char *buf;
 	FILE *fd;
@@ -19,6 +19,11 @@ void getlines(stack_ **head, char **av)
 		exit(EXIT_FAILURE);
 	}
 	buf = malloc(sizeof(char) * size);
+	if (buf == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: malloc failed\n");
+		exit(EXIT_FAILURE);
+	}
 	while (getline(&buf, &size, fd) != EOF)
 	{
 		if (strcmp(buf, "\n") != 0)

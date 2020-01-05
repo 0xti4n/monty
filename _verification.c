@@ -5,7 +5,7 @@
 * @line: The getline.
 * Return: Nothing.
 */
-void verification(stack_ **head, char *line, int n_line, FILE *fd)
+void verification(stack_t **head, char *line, int n_line, FILE *fd)
 {
 	int n_op = 0, not_match = 0;
 	char **instructions = NULL;

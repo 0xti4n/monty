@@ -5,7 +5,7 @@
  *
  * Return: Void.
  */
-void free_stack(stack_ *head)
+void free_stack(stack_t *head)
 {
 	if (head == NULL)
 		return;
