@@ -34,7 +34,7 @@ void getlines(stack_t **head, char **av)
 	{
 		free(buf);
 		fclose(fd);
-		exit(0);
+		exit(EXIT_SUCCESS);
 	}
 	free(buf);
 	fclose(fd);
