@@ -30,6 +30,12 @@ void getlines(stack_t **head, char **av)
 			verification(head, buf, lines_cont + 1, fd);
 		lines_cont++;
 	}
+	if (lines_cont == 0)
+	{
+		free(buf);
+		fclose(fd);
+		exit(0);
+	}
 	free(buf);
 	fclose(fd);
 }
