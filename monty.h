@@ -40,6 +40,7 @@ typedef struct instruction_s
 } instruction_t;
 int n;
 void getlines(stack_t **head, char **av);
+void pop_fun(stack_t **stack, unsigned int line_number);
 char **tokenize(char *line);
 void verification(stack_t **head, char *line, int n_line, FILE *fd);
 void add_stack(stack_t **head, unsigned int line_number);
