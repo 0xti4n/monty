@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
-* getlines: get the information.
+* getlines - functions get the information.
 * @head: The new node.
 * @av: arguments.
 * Return: nothing.

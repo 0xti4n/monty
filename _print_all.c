@@ -8,6 +8,7 @@
 void print_all(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
+
 	line_number--;
 	while (tmp)
 	{

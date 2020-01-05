@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * free_dlistint - doubly linked list
+ * free_stack - function that stack.
  * @head: pointer to head of list.
  *
  * Return: Void.

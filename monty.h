@@ -38,7 +38,7 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-extern int n;
+int n;
 void getlines(stack_t **head, char **av);
 char **tokenize(char *line);
 void verification(stack_t **head, char *line, int n_line, FILE *fd);

@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * add_stack: add nodes in stack
+ * add_stack - Functions that add nodes in stack
  * @stack: pinter to head of list
  * @line_number: integer to save in node.
  * Return: nothing.
@@ -8,6 +8,7 @@
 void add_stack(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
+
 	line_number--;
 	new = malloc(sizeof(stack_t));
 	if (new == NULL || stack == NULL)
@@ -21,7 +22,6 @@ void add_stack(stack_t **stack, unsigned int line_number)
 		(*stack)->n = n;
 		(*stack)->prev = NULL;
 		(*stack)->next = NULL;
-		
 	}
 	else
 	{

@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* tokenize: parse the information of the file.
+* tokenize - Function that parse the information of the file.
 * @line: The info to tokenize.
 * Return: The list of tokens.
 */
