@@ -17,9 +17,12 @@ char **tokenize(char *line)
 		dprintf(STDERR_FILENO, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
-	token = strtok(line, " \t\n"); /* no olvidar tab y los demas sep */
+	token = strtok(line, del); /* no olvidar tab y los demas sep */
 	if (token == NULL)
+	{
+		free(instructions);
 		return (NULL);
+	}
 	if (strcmp(token, "push") == 0)
 		instructions[1] = NULL;
 	while (i < 2)
