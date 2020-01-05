@@ -1,4 +1,16 @@
 #include "monty.h"
+char *filter_num(char * instruction)
+{
+	int i = 0;
+
+	while (instruction[i])
+	{
+		if (!(instruction[i] >= 48 && instruction[i] <= 57))
+			return (NULL);
+		i++;
+	}
+	return (instruction);
+}
 /**
 * verification: verificate the information and execute.
 * @head: The new node.
@@ -22,7 +34,7 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 		{
 			if (strcmp(comands[n_op].opcode, "pall") != 0)
 			{	
-				if (instructions[1] == NULL)
+				if (instructions[1] == NULL || filter_num(instructions[1]) == NULL)
 				{
 					dprintf(STDERR_FILENO, "L %d: usage: push integer\n", n_line);
 					free(instructions);
