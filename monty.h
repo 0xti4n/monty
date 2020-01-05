@@ -45,4 +45,5 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd);
 void add_stack(stack_t **head, unsigned int line_number);
 void print_all(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *head);
+void pint_fun(stack_t **stack, unsigned int line_number);
 #endif
