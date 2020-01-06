@@ -8,6 +8,6 @@
 
 void nop_fun(stack_t **stack, unsigned int line_number)
 {
-	**stack = **stack;
+	stack = stack;
 	line_number = line_number;
 }
