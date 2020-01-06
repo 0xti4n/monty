@@ -58,6 +58,7 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 		{"mul", mul_fun},
 		{"div", div_fun},
 		{"mod", mod_fun},
+		{"pchar", pchar_fun},
 		{NULL, NULL}
 	};
 	ins = tokenize(line);
