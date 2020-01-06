@@ -13,7 +13,7 @@ void mul_fun(stack_t **stack, unsigned int line_number)
 
 	if (stack ==  NULL || *stack == NULL || (*stack)->next == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't sub, stack too short\n", line_number);
+		dprintf(STDERR_FILENO, "L%d: can't mul, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	sum = (*stack)->n;
