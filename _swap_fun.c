@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * pint_fun - prints the value at the top of the stack, followed by a new line.
+ * swap_fun - swap top two elements of the stack.
  * @line_number: integer line number
  * @stack: pointer to pointer to stack header(or queuei)
  * Return: nothing
