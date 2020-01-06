@@ -15,7 +15,7 @@ void getlines(stack_t **head, char **av)
 	fd = fopen(av[1], "r");
 	if (!fd)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open %s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", av[1]);
 		exit(EXIT_FAILURE);
 	}
 	buf = malloc(sizeof(char) * size);
