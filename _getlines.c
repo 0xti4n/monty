@@ -26,7 +26,7 @@ void getlines(stack_t **head, char **av)
 	}
 	while (getline(&buf, &size, fd) != EOF)
 	{
-		if (strcmp(buf, "\n") != 0)
+		if (strcmp(buf, "\n") != 0 && buf[0] != '#')
 			verification(head, buf, lines_cont + 1, fd);
 		lines_cont++;
 	}
