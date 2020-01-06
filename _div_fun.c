@@ -24,7 +24,7 @@ void div_fun(stack_t **stack, unsigned int line_number)
 	}
 	div2 = (*stack)->next->n;
 	*stack = (*stack)->next;
-	(*stack)->n = div / div2;
+	(*stack)->n = div2 / div;
 	if (*stack != NULL)
 		(*stack)->prev = NULL;
 	free(tmp);
