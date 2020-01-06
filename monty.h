@@ -39,6 +39,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 int n;
+void sub_fun(stack_t **stack, unsigned int line_number);
 void nop_fun(stack_t **stack, unsigned int line_number);
 void add_fun(stack_t **stack, unsigned int line_number);
 void swap_fun(stack_t **stack, unsigned int line_number);
