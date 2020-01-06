@@ -19,7 +19,7 @@ void mul_fun(stack_t **stack, unsigned int line_number)
 	mul = (*stack)->n;
 	mul2 = (*stack)->next->n;
 	*stack = (*stack)->next;
-	(*stack)->n = mul * mul2;
+	(*stack)->n = mul2 * mul;
 	if (*stack != NULL)
 		(*stack)->prev = NULL;
 	free(tmp);
