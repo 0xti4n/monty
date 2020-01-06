@@ -47,20 +47,11 @@ void verification(stack_t **head, char *line, int n_line, FILE *fd)
 	char **ins = NULL;
 
 	instruction_t comands[] = {
-		{"push", add_stack},
-		{"pall", print_all},
-		{"pint", pint_fun},
-		{"pop", pop_fun},
-		{"swap", swap_fun},
-		{"add", add_fun},
-		{"nop", nop_fun},
-		{"sub", sub_fun},
-		{"mul", mul_fun},
-		{"div", div_fun},
-		{"mod", mod_fun},
-		{"pchar", pchar_fun},
-		{NULL, NULL}
-	};
+		{"push", add_stack}, {"pall", print_all}, {"pint", pint_fun},
+		{"pop", pop_fun}, {"swap", swap_fun}, {"add", add_fun},
+		{"nop", nop_fun}, {"sub", sub_fun}, {"mul", mul_fun},
+		{"div", div_fun}, {"mod", mod_fun}, {"pchar", pchar_fun},
+		{NULL, NULL} };
 	ins = tokenize(line);
 	while (comands[n_op].opcode && ins)
 	{
