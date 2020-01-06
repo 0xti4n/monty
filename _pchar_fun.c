@@ -8,8 +8,6 @@
 
 void pchar_fun(stack_t **stack, unsigned int line_number)
 {
-	char val;
-	
 	if (stack ==  NULL || *stack == NULL)
 	{
 		dprintf(STDERR_FILENO, "L%d: can't pchar, stack empty\n", line_number);
@@ -17,8 +15,7 @@ void pchar_fun(stack_t **stack, unsigned int line_number)
 	}
 	if ((*stack)->n >= 0 && (*stack)->n <= 255)
 	{
-		val = (*stack)->n;
-		printf("%c\n", val);
+		printf("%c\n", (*stack)->n);
 	}
 	else
 	{
